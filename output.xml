@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.2 on win32)" generated="2025-09-12T20:46:10.524619" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Ac" source="C:\Users\lilia\Desktop\tests_automation_ui\tests\test_ac.robot">
+<kw name="Start" type="SETUP">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-09-12T20:46:10.878076" level="INFO">QA: Pedro Lopez</msg>
+<arg>QA: ${name} ${last_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-09-12T20:46:10.877857" elapsed="0.000276"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-09-12T20:46:10.879177" level="INFO">Opening browser 'chrome' to base url 'https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/Account/Login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-09-12T20:46:10.878918" elapsed="2.277673"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-09-12T20:46:13.158208" elapsed="0.039901"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-09-12T20:46:13.198416" elapsed="0.000392"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>20</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2025-09-12T20:46:13.199035" elapsed="0.101542"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-09-12T20:46:13.407081" level="INFO">Page title is 'Log In - Paylocity Benefits Dashboard'.</msg>
+<arg>Log In - Paylocity Benefits Dashboard</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-09-12T20:46:13.301048" elapsed="0.106258"/>
+</kw>
+<status status="PASS" start="2025-09-12T20:46:10.877246" elapsed="2.531378"/>
+</kw>
+<test id="s1-t1" name="Test Case 1: Login" line="20">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-12T20:46:13.409947" level="INFO">Typing text 'TestUser803' into text field 'name=Username'.</msg>
+<arg>name=Username</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-12T20:46:13.409531" elapsed="0.421775"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-09-12T20:46:13.833183" level="INFO">Typing text ';PX7m}9t}TVZ' into text field 'id=Password'.</msg>
+<arg>id=Password</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-12T20:46:13.832790" elapsed="0.377798"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-09-12T20:46:14.212543" level="INFO">Clicking button '//button[normalize-space()='Log In']'.</msg>
+<arg>//button[normalize-space()='Log In']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-09-12T20:46:14.212125" elapsed="0.596486"/>
+</kw>
+<kw name="F_screenshot_allure" owner="Functions">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-09-12T20:46:15.854155" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="login_success"&gt;&lt;img src="login_success" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-09-12T20:46:15.854339" level="INFO">C:\Users\lilia\Desktop\tests_automation_ui\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:1025: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+  return self.get_screenshot_as_file(filename)</msg>
+<msg time="2025-09-12T20:46:15.854869" level="INFO">${screenshot_path} = C:\Users\lilia\Desktop\tests_automation_ui\login_success</msg>
+<var>${screenshot_path}</var>
+<arg>${OUTPUT DIR}/${name_img}</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-09-12T20:46:14.810265" elapsed="1.044757"/>
+</kw>
+<kw name="Attach File" owner="AllureLibrary">
+<arg>${screenshot_path}</arg>
+<status status="PASS" start="2025-09-12T20:46:15.856465" elapsed="0.001905"/>
+</kw>
+<arg>login_success</arg>
+<status status="PASS" start="2025-09-12T20:46:14.809886" elapsed="1.048808"/>
+</kw>
+<doc>Validate the user login wih the right credentials</doc>
+<tag>Login</tag>
+<status status="PASS" start="2025-09-12T20:46:13.408841" elapsed="2.450270"/>
+</test>
+<kw name="End" type="TEARDOWN">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-09-12T20:46:17.862188" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-09-12T20:46:15.861744" elapsed="2.000674"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-09-12T20:46:17.864250" elapsed="2.222196"/>
+</kw>
+<status status="PASS" start="2025-09-12T20:46:15.861525" elapsed="4.225321"/>
+</kw>
+<doc>Paylocity</doc>
+<status status="PASS" start="2025-09-12T20:46:10.573454" elapsed="9.513570"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Login</stat>
+</tag>
+<suite>
+<stat name="Test Ac" id="s1" pass="1" fail="0" skip="0">Test Ac</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

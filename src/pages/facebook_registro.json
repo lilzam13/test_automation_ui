@@ -1,0 +1,55 @@
+{
+    "Logo": {
+        "GetFieldBy": "Xpath",
+        "ValueToFind": "//*[@id='content']/div[1]/img"
+    },
+    "Title": {
+        "GetFieldBy": "Xpath",
+        "ValueToFind": "//*[@id='content']/div[2]/div/div[1]/div[1]"
+    },
+    "Slogan": {
+        "GetFieldBy": "Xpath",
+        "ValueToFind": "//*[@id='content']/div[2]/div/div[1]/div[2]"
+    },
+    "Firstname": {
+        "GetFieldBy": "Name",
+        "ValueToFind": "firstname"
+    },
+    "Lastname": {
+        "GetFieldBy": "Name",
+        "ValueToFind": "lastname"
+    },
+    "Month": {
+        "GetFieldBy": "Xpath",
+        "ValueToFind": "//*[@id='month']"
+    },
+    "Day": {
+        "GetFieldBy": "Xpath",
+        "ValueToFind": "//*[@id='day']"
+    },
+    "Year": {
+        "GetFieldBy": "Xpath",
+        "ValueToFind": "//*[@id='year']"
+    },
+    "Sex_female": {
+        "GetFieldBy": "Xpath",
+        "ValueToFind": "//label[normalize-space()='Female']"
+    },
+    "Sex_male": {
+        "GetFieldBy": "Xpath",
+        "ValueToFind": "//*[@id='u_0_d_7L']/span[2]/label"
+    },
+    "Email": {
+        "GetFieldBy": "Name",
+        "ValueToFind": "reg_email__"
+    },
+    "Password": {
+        "GetFieldBy": "Name",
+        "ValueToFind": "reg_passwd__"
+    },
+    "Text": {
+        "GetFieldBy": "Xpath",
+        "ValueToFind": "//*[contains(text(), '{}')]"
+    }
+}
+

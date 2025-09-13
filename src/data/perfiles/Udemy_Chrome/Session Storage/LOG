@@ -1,0 +1,17 @@
+2025/07/30-13:15:10.355 41f8 Creating DB C:\Users\lilia\AppData\Local\Google\Chrome\User Data\Profile 3\Session Storage since it was missing.
+2025/07/30-13:15:10.368 41f8 Reusing MANIFEST C:\Users\lilia\AppData\Local\Google\Chrome\User Data\Profile 3\Session Storage/MANIFEST-000001
+2025/07/30-13:44:46.790 6b20 Level-0 table #5: started
+2025/07/30-13:44:46.795 6b20 Level-0 table #5: 33001 bytes OK
+2025/07/30-13:44:46.796 6b20 Delete type=0 #3
+2025/07/30-13:45:33.272 6b20 Level-0 table #7: started
+2025/07/30-13:45:33.279 6b20 Level-0 table #7: 269590 bytes OK
+2025/07/30-13:45:33.280 6b20 Delete type=0 #4
+2025/07/30-13:46:33.274 41f8 Level-0 table #9: started
+2025/07/30-13:46:33.277 41f8 Level-0 table #9: 51191 bytes OK
+2025/07/30-13:46:33.278 41f8 Delete type=0 #6
+2025/07/30-13:51:12.045 6b20 Level-0 table #11: started
+2025/07/30-13:51:12.056 6b20 Level-0 table #11: 495560 bytes OK
+2025/07/30-13:51:12.058 6b20 Delete type=0 #8
+2025/07/30-13:54:37.245 6b20 Level-0 table #13: started
+2025/07/30-13:54:37.253 6b20 Level-0 table #13: 243498 bytes OK
+2025/07/30-13:54:37.254 6b20 Delete type=0 #10
