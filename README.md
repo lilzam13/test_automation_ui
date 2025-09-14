@@ -22,7 +22,7 @@ Execute tests by tags: robot --listener allure_robotframework:reports/allure-res
 allure generate reports/allure-results --clean -o reports/allure-report</br>
 allure open reports/allure-report</br>
 
-*** BUG TRACK INCIDENT QA ***</br>
+*** BUG TRACK ***</br>
 https://docs.google.com/spreadsheets/d/1uL0kWWJ5SG7nc_WebRw_kjVC1T0wZ9yw7NBrBcqpNVk/edit?gid=0#gid=0</br>
 
 
